@@ -1,0 +1,20 @@
+<div class="container color-dark">
+    <div class="col">
+      <p>
+        This is what I'm all about. <a href="" (click)="sendMeHome()"><strong>Take me back</strong></a>.
+      </p>
+    </div>
+</div>
+  <!-- You can access data from other components through dependency injection using a service file-->
+
+<div class="container color-light">
+<div class="col">
+<p> These is the data imported from the HomeComponent using depency injection and a service file defined in data.service.ts</p>
+</div>
+<div class="col">
+<p class="life-container" *ngFor="let shittyDayDream of goals;">
+    {{ shittyDayDream }}
+  </p>
+</div>
+</div>
+
